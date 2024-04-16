@@ -11,13 +11,15 @@ main{
 nav{
 
     background-color: aquamarine;
-    padding: 1%;
+    padding: 3%;
+    margin: auto;
 }
 
 header{
 
     background-color: brown;
     padding: 1%;
+    margin: auto;
 }
 
 footer{
@@ -25,5 +27,30 @@ footer{
 
     background-color: red;
     padding: 5%;
+    margin: auto;
    
+}
+.tor{
+
+    background-color: brown;
+    padding: 12%;
+    margin: auto;
+}
+
+.tor2{
+
+    background-color: rgb(18, 187, 187);
+    padding: 12%;
+    margin: auto;
+
+
+}
+
+.tor3{
+
+    background-color: rgb(47, 17, 219);
+    padding: 12%;
+    margin: auto;
+
+
 }
