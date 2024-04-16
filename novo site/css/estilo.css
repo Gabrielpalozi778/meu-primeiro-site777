@@ -28,20 +28,24 @@ footer{
     background-color: red;
     padding: 5%;
     margin: auto;
+    margin-left: auto;
+    margin-right: auto;
    
 }
 .tor{
 
     background-color: brown;
-    padding: 12%;
+    padding: 10%;
     margin: auto;
+    font-size: 140%;
+    text-align: center;
 }
 
 .tor2{
 
     background-color: rgb(18, 187, 187);
     padding: 12%;
-    margin: auto;
+    
 
 
 }
@@ -54,3 +58,37 @@ footer{
 
 
 }
+.tor4{
+
+    background-color: blueviolet;
+    padding: 12%;
+    text-align: center;
+
+
+
+
+
+
+}
+.tor5{
+
+    background-color: rgb(186, 187, 190);
+    padding: 12%;
+    text-align: center;
+
+
+
+
+
+
+}
+.titulokali{
+
+font-size: 150%;
+    
+}
+.titulokali2{
+
+    font-size: 150%;
+        
+    }
