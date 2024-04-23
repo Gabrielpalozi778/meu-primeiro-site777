@@ -46,35 +46,50 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+.AEA{
 
+
+
+
+    text-align: center;
+    font-size: 800%;
+    color: blue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+   
+
+}
 main{
+   
 
-
-    background-color: blue;
+    color: blue;
+    background-image: url();
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    padding: 5%;
+    padding: 4%;
 }
 
 nav{
 
-    background-color: aquamarine;
+    background-color: brown;
     padding: 3%;
-    margin: auto;
+    margin: 1%;
+
 }
 
 header{
 
-    background-color: brown;
-    padding: 1%;
-    margin: auto;
+    background-color: darkolivegreen;
+    padding-top: 2%;
+    
+   
+    
 }
 
 footer{
 
 
-    background-color: red;
     padding: 5%;
     margin: auto;
     margin-left: auto;
@@ -83,17 +98,20 @@ footer{
 }
 .tor{
 
-    background-color: brown;
+   
     padding: 10%;
     margin: auto;
     font-size: 140%;
-    text-align: center;
+    text-align: left;
+    font-size: 150%;
 }
 
 .tor2{
 
-    background-color: rgb(18, 187, 187);
+  
     padding: 12%;
+    text-align: left;
+    font-size: 150%;
     
 
 
@@ -101,17 +119,20 @@ footer{
 
 .tor3{
 
-    background-color: rgb(47, 17, 219);
+  
     padding: 12%;
     margin: auto;
+    text-align: left;
+    font-size: 150%;
 
 
 }
 .tor4{
 
-    background-color: blueviolet;
+    
     padding: 12%;
-    text-align: center;
+    text-align: left;
+    font-size: 150%;
 
 
 
@@ -121,9 +142,10 @@ footer{
 }
 .tor5{
 
-    background-color: rgb(186, 187, 190);
+   
     padding: 12%;
-    text-align: center;
+    text-align: left;
+    font-size: 150%;
 
 
 
@@ -131,13 +153,28 @@ footer{
 
 
 }
+.tor6{
+
+
+    font-size: 150%;
+}
 .titulokali{
 
-font-size: 150%;
+font-size: 300%;
+text-align: center;
+padding-top: 1%;
+padding-bottom: 2%;
     
 }
 .titulokali2{
 
     font-size: 150%;
+    text-align: center;
         
     }
+.logo{
+
+ width: 10%; 
+}
+
+
