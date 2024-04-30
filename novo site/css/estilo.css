@@ -26,26 +26,20 @@ time, mark, audio, video {
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
-}
+	display: block;}
 body {
-	line-height: 1;
-}
+	line-height: 1;}
 ol, ul {
-	list-style: none;
-}
+	list-style: none;}
 blockquote, q {
-	quotes: none;
-}
+	quotes: none;}
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
-	content: none;
-}
+	content: none;}
 table {
 	border-collapse: collapse;
-	border-spacing: 0;
-}
+	border-spacing: 0;}
 .AEA{
 
 
@@ -54,48 +48,29 @@ table {
     text-align: center;
     font-size: 800%;
     color: blue;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-
-   
-
-}
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
 main{
-   
-
     color: blue;
     background-image: url();
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    padding: 4%;
-}
-
+    padding: 4%;}
 nav{
 
     background-color: red;
     padding: 3%;
-    margin: 1%;
-
-}
-
+    margin: 1%;}
 header{
 
-    background-color:rgb(22, 86, 204)
-    padding-top: 2%;
-    
-   
-    
-}
-
+    background-color:rgb(22, 86, 204)}
 footer{
 
 
     padding: 5%;
     margin: auto;
     margin-left: auto;
-    margin-right: auto;
-   
-}
+    margin-right: auto;}
 .tor{
 
    
@@ -103,104 +78,62 @@ footer{
     margin: auto;
     font-size: 140%;
     text-align: left;
-    font-size: 150%;
-}
-
+    font-size: 150%;}
 .tor2{
 
   
     padding: 12%;
     text-align: left;
-    font-size: 150%;
-    
-
-
-}
-
+    font-size: 150%;}
 .tor3{
 
   
     padding: 12%;
     margin: auto;
     text-align: left;
-    font-size: 150%;
-
-
-}
+    font-size: 150%;}
 .tor4{
 
     
     padding: 12%;
     text-align: left;
-    font-size: 150%;
-
-
-
-
-
-
-}
+    font-size: 150%;}
 .tor5{
 
    
     padding: 12%;
     text-align: left;
-    font-size: 150%;
-
-
-
-
-
-
-}
+    font-size: 150%;}
 .tor6{
 
 
-    font-size: 150%;
-}
+    font-size: 150%;}
 .titulokali{
 
 font-size: 400%;
 text-align: center;
 padding-top: 4%;
-padding-bottom: 5%;
-    
-}
+padding-bottom: 5%;}
 .titulokali2{
 
     font-size: 400%;
-    text-align: center;
-        
-    }
+    text-align: center;}
 .logo{
 
- width: 10%; 
-}
+ width: 10%; }
 .penguim{
 
-    padding:10%
-
-}
-
+    padding:10%}
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    width: 50%; height: 50%;
-
-    
-  }
-  
-  td, th {
+    width: 50%; height: 50%;} 
+td, th {
     border: 1px solid #dddddd;
     text-align: left;
-    padding: 8px;
-  }
-  
-  tr:nth-child(even) {
-    background-color: #dddddd;
-    
-  }
+    padding: 8px;}
+tr:nth-child(even) {
+    background-color: #dddddd;}
 body{
 
-    background-image: image();
-}
+    background-image: image();}
