@@ -119,11 +119,7 @@ padding-bottom: 5%;}
     font-size: 400%;
     text-align: center;}
 .logo{
-
  width: 10%; }
-.penguim{
-
-    padding:10%}
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
@@ -137,3 +133,9 @@ tr:nth-child(even) {
 body{
 
     background-image: image();}
+.linha{
+
+display: flex;
+
+
+}
