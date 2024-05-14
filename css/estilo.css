@@ -50,7 +50,7 @@ table {
     color: blue;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
 main{
-    color: blue;
+    color: rgb(2, 2, 250);
     background-image: url();
     width: 80%;
     margin-left: auto;
@@ -63,7 +63,7 @@ nav{
     margin: 1%;}
 header{
 
-    background-color:rgb(22, 86, 204)}
+    background-color:rgb(79, 125, 209)}
 footer{
 
 
@@ -137,5 +137,28 @@ body{
 
 display: flex;
 
+}
 
+/*Link não visitado */
+a:link {
+  color: rgb(0, 247, 255);
+  text-decoration: none;
+}
+
+/*Link já visitado*/
+a:visited {
+  color: rgb(255, 0, 0);
+  text-decoration: none;
+}
+
+/*Quando o mouse passa por cima*/
+a:hover {
+  color: rgb(77, 255, 7);
+  text-decoration: none;
+}
+
+/*Link ativo/selecionado*/
+a:active {
+  color: rgb(255, 255, 2);
+  text-decoration: none;
 }
