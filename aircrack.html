@@ -30,11 +30,160 @@
             </div>
         </header>
         <main>
-            <div class="titulokali2">
+            <div class="titulokali">
                 <h1>COMO AIR-CRACK FUNCIONA?</h1>
 
 
             </div>
+
+
+            <section>
+
+
+                <div class="titulokali">
+                    <h1>REQUERIMENTOS?</h1>
+    
+    
+                </div>
+    
+
+
+                <div class="tor6">
+
+
+                
+                    <h1>Para a realização deste tutorial será necessário um computador com o Sistema Operacional Debian ou variantes e que a máquina possua placa de rede wireless ou adaptador wi-fi, e acesso root.
+
+                        Também é necessário que você possua uma wordlist disponível em seu ambiente.</h1>
+
+
+                </div>
+
+
+                <div class="titulokali">
+                    <h1>INFORMAÇÃO?</h1>
+    
+    
+                </div>
+    
+
+                <div class="tor6">
+
+
+
+                    <h1>Wordlists são arquivos que possuem várias palavras frequentemente utilizadas.
+
+                        Você pode escrever o seu próprio arquivo ou encontrar exemplos através de uma simples busca no Google.
+                        
+                        Precisará também de um ponto de acesso wireless, no qual você não esteja conectado com a interface de teste.
+                        
+                        Para ter certeza sobre a existência de interfaces wi-fi, faça a verificação:
+                    </h1>
+
+
+                    <code class="code">iwconfig</code>
+                    
+
+
+                </div>
+
+                <div class="tor6">
+
+
+
+                    <h1>Se o dispositivo estiver conectado, mas não for listado; inicie a interface:                    </h1>
+
+
+                </div>
+
+                <code class="code">ifconfig wlan0 up</code>
+
+                <div class="tor6">
+
+
+
+                    <h1>Veja as redes que estão ao seu alcance:</h1>
+
+
+                </div>
+
+                <code class="code">iwlist wlan0 scanning</code>
+
+
+                <div class="tor6">
+
+
+
+                    <h1>Anote o Mac Adress e o Canal da rede alvo, pois precisará deles na sequência.</h1>
+
+
+                </div>
+
+                <div class="titulokali">
+                    <h1>INSTALAÇÃO</h1>
+    
+    
+                </div>
+
+                <div class="tor6">
+
+
+
+                    <h1>Para monitorar e capturar pacotes de um cliente da rede, precisaremos do Aircrack-ng:</h1>
+
+
+                </div>
+
+
+                <code class="code">sudo apt-get update && sudo apt-get install aircrack-ng</code>
+
+                <div class="titulokali">
+                    <h1>INICIANDO O MONITORAMENTO.</h1>
+    
+    
+                </div>
+
+                <div class="tor6">
+
+
+
+                    <h1>Estando com o aircrack-ng instalado, podemos começar:
+
+                        Matando processos que podem causar incompatibilidades</h1>
+
+
+                </div>
+
+                <code class="code">airmon-ng check kill</code>
+
+                <div class="tor6">
+
+
+
+                    <h1></h1>
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </section>
 
         
         </main>
