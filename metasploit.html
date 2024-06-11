@@ -31,7 +31,7 @@
         </header>
         <main>
             <div class="titulokali">
-                <h1>A</h1>
+                <h1>COMO METASPLOIT FUNCIONA?</h1>
 
 
             </div>
@@ -41,7 +41,7 @@
 
 
                 <div class="titulokali">
-                    <h1>A</h1>
+                    <h1>O QUE É?</h1>
     
     
                 </div>
@@ -52,14 +52,14 @@
 
 
                 
-                    <h1>A</h1>
+                    <h1>Metasploit é um framework (estrutura) para desenvolver e executar exploits em uma máquina de destino remota (que será hackeada/explorada/testada), muito utilizado por ethical hackers e profissionais de cybersec. Foi originalmente desenvolvido como uma ferramenta de rede portátil em 2003 por H. D. Moore e, desde então, evoluiu para uma ferramenta de segurança cibernética completa usada por testadores de penetração e administradores de TI em todo o mundo.</h1>
 
 
                 </div>
 
 
                 <div class="titulokali">
-                    <h1>A</h1>
+                    <h1>COMO INSTALAR</h1>
     
     
                 </div>
@@ -69,10 +69,12 @@
 
 
 
-                    <h1>A</h1>
+                    <h1>A ferramenta já vem nativamente instalada no Kali Linux. Caso você possua outra distribuição, abra o terminal e execute os seguintes comandos:
+
+                        Em distribuições Linux baseadas em Ubuntu ou Debian:</h1>
 
 
-                    <code class="code">A</code>
+                    <code class="code">apt install metasploit-framework</code>
                     
 
 
@@ -82,36 +84,37 @@
 
 
 
-                    <h1>A</h1>
+                    <h1>Para CentOS/Redhat:</h1>
 
 
                 </div>
 
-                <code class="code">A</code>
+                <code class="code">yum install metasploit-framework</code>
 
                 <div class="tor6">
 
 
 
-                    <h1>A</h1>
+                    <h1>Módulos do Metasploit Framework</h1>
 
 
                 </div>
-
-                <code class="code">A</code>
 
 
                 <div class="tor6">
 
 
 
-                    <h1>A</h1>
+                    <h1>Exploits: Módulos que contêm código que pode ser usado para explorar uma vulnerabilidade em um sistema de destino, a fim de obter acesso ou executar código arbitrário;
+                        Payloads: Módulos contêm código que é executado na máquina destino (“vítima”) após uma exploração. Os payloads podem ser usados para estabelecer um acesso persistente no sistema de destino ou para executar tarefas específicas, como instalar um rootkit ou exfiltrar dados;
+                        Auxiliares: Esses módulos fornecem uma ampla gama de funcionalidades além da simples exploração, como varredura de portas, mapeamento de rede e análise de vulnerabilidade;
+                        Encoders: Esses módulos são usados ​​para codificar payloads para contornar os controles de segurança ou evitar a detecção.</h1>
 
 
                 </div>
 
                 <div class="titulokali">
-                    <h1>A</h1>
+                    <h1>Componentes do Metasploit</h1>
     
     
                 </div>
@@ -120,16 +123,17 @@
 
 
 
-                    <h1>A</h1>
+                    <h1>msfconsole — é a interface via CLI para executar e desenvolver os exploits
+                        msfdb — o metasploit permite a utilização de um banco de dados para armazenamento de todas as informações coletadas na etapa de Recon
+                        msfvenom — ferramenta que cria payloads para que sejam injetados na máquina vítima e gerem alguma forma de acesso
+                        meterpreter — é um payload sofisticado que possui diversas funcionalidades para comunicação com a máquina destino, injetar e coletar arquivos, dentre outros</h1>
 
 
                 </div>
 
 
-                <code class="code">A</code>
-
                 <div class="titulokali">
-                    <h1>A</h1>
+                    <h1>Utilizando na prática</h1>
     
     
                 </div>
@@ -138,42 +142,39 @@
 
 
 
-                    <h1>A</h1>
+                    <h1>Para ilustrar o uso da ferramenta de forma rápida, vamos acompanhar este breve passo a passo, supondo que temos a missão de explorar um servidor web com Wordpress, comumente explorada em CTFs.
+
+                        Primeiro devemos carregar o Metasploit no terminal:</h1>
 
 
                 </div>
 
-                <code class="code">A</code>
+                <code class="code">msfconsole #carrega o metasploit
+                    msfconsole -q #carrega o metasploit de forma quieta, sem banners</code>
 
                 <div class="tor6">
 
 
 
-                    <h1>A</h1>
+                    <h1>Vamos agora buscar por módulos disponíveis dentro da ferramenta, basta digitar search *nome da tecnologia ou versão ou vulnerabilidade* . Neste caso queremos explorar um servidor Wordpress:Conforme evidenciado no print, é possível verificar que cada módulo tem uma classificação (coluna rank) de manual, normal, bom e excelente, classificando por nível de eficácia do módulo.
+
+                        Digamos que a vítima seja vulnerável ao exploit wp_admin shell upload, identificado na lista acima pelo número 20 ou pelo nome completo exploit/unix/webapp/wp_admin_shell_upload . Para usar o exploit desejado, devemos usar o comando use:</h1>
 
 
                 </div>
 
-                <code class="code">A</code>
+                <div class="AEIOU">
 
-                <div class="titulokali">
-                    <h1>A</h1>
-
+                <img src="img/1_j3rKkVanD88JQm5YHHbdAQ.webp" alt="imagem linux">
 
                 </div>
-    
+            
 
+                <code class="code">use exploit/unix/webapp/wp_admin_shell_upload
 
-                <div class="tor6">
-
-
-
-                    <h1>A</h1>
-
-
-                </div>
-
-                <code class="code">A</code>
+                    ou
+                    
+                    use 20</code>
 
 
 
@@ -181,66 +182,40 @@
 
 
 
-                    <h1>A</h1>
+                    <h1>Pronto, selecionamos o exploit e um payload default já foi selecionado, o php/meterpreter/reverse_tcp (o payload padrão definido pelo metasploit é válido para a maioria dos casos, mas não todos os casos. Caso o exploit falhe, é interessante rever esta etapa). Este payload já cria uma sessão meterpreter.
 
-                </div>
+                    </h1>
 
-                <div class="titulokali">
-                    <h1>A</h1>
 
                 </div>
 
                 <div class="tor6">
 
-                    <h1>A</h1>
-
-                </div>
 
 
-                <code class="code">A</code>
+                    <h1>Para usar qualquer módulo do Metasploit, é necessário especificar algumas opções. Para saber quais opções são essas, utilizar o comando options.
 
-
-
-                <div class="titulokali">
-                    <h1>A</h1>
-
-
-                </div>
-
-
-                <div class="tor6">
-
-                    <h1>A</h1>
-
-                </div>
-
-                <code class="code">A</code>
-
-                <div class="titulokali">
-                    <h1>A</h1>
+                        O comando options é usado para visualizar e configurar as opções de um determinado módulo. Por exemplo, se você estiver usando um módulo de exploração (como neste exemplo), o comando permitirá que você defina configurações como o endereço IP de destino (RHOSTS) e a porta (RPORT), o payload e quaisquer outras opções específicas do módulo.
+                        
+                        Ao executar o comando “options” sem nenhum argumento, ele exibirá todas as opções disponíveis e seus valores atuais para o módulo atualmente selecionado.
+                        
+                        Além disso, você também pode usar o comando show advanced para ver as opções avançadas do módulo atualmente selecionado, se houver.</h1>
 
                 </div>
 
                 <div class="tor6">
 
-                    <h1>A</h1>
+                    <h1>Tendo tudo preenchido corretamente, é possível checar se o exploit vai funcionar ou não através do comando check. Ele retornará se o alvo é explorável ou não.</h1>
 
                 </div>
-                
 
+                <div class="tor6">
 
+                    <h1>Sendo explorável, basta enviar o comando run ou exploit e pronto. Um shell na máquina alvo deve ser retornado, pronto para execução de comandos.</h1>
 
+                </div>
 
-
-
-
-
-
-
-
-
-
-        
+   
         </main>
 
 
