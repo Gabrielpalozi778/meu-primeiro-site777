@@ -31,20 +31,17 @@
         </header>
         <main>
             <div class="titulokali2">
-                <h1>COMO N-MAP FUNCIONA?</h1>
+                <h1>COMO N-MAP FUNCIONA</h1>
 
-                <div class="titulokali">
-                    <h1>A</h1>
-    
-    
-                </div>
-    
+
+            </div>
+                
     
                 <section>
     
     
                     <div class="titulokali">
-                        <h1>A</h1>
+                        <h1>O QUE É</h1>
         
         
                     </div>
@@ -55,14 +52,24 @@
     
     
                     
-                        <h1>A</h1>
+                        <h1>Nmap é um mapeador de rede que se tornou uma das ferramentas gratuitas de descoberta de rede mais populares do mercado. Hoje, o Nmap é uma das principais ferramentas usadas por administradores de rede para mapear suas redes. O programa pode ser usado para encontrar live hosts em uma rede, fazer varreduras de portas, varreduras de ping, detecção de sistema operacional e detecção de versão.
+
+                            Graças a diversos ataques cibernéticos recentes, as atenções se voltaram novamente para o tipo de auditoria de rede que o Nmap oferece. Os analistas têm apontado que o recente hack ao Capital One, por exemplo, poderia ter sido detectado antes se os administradores do sistema estivessem monitorando os dispositivos conectados. Neste guia, vamos ver o que é o Nmap, o que ele faz, e vamos explicar como usar os comandos mais comuns.
+                            Em sua essência, o Nmap é uma ferramenta de varredura de rede que usa pacotes IP para identificar todos os dispositivos conectados a uma rede e fornecer informações sobre os serviços e sistemas operacionais que eles estão executando.
+
+                            O programa é mais comumente usado através de uma interface de linha de comando (embora também estejam disponíveis front-ends de interface gráfica do usuário) e está disponível para diversos sistemas operacionais, como Linux, Free BSD e Gentoo. Sua popularidade também foi ampliada por uma comunidade de suporte ao usuário ativa e animada.
+                            
+                            O Nmap foi desenvolvido para redes de escala empresarial e pode varrer milhares de dispositivos conectados. No entanto, nos últimos anos o Nmap tem sido usado cada vez mais por empresas menores. O crescimento da Internet das Coisas (IoT), em particular, fez com que as redes usadas por essas empresas se tornassem mais complexas e portanto mais difíceis de proteger.
+                            
+                            Com isso, o Nmap hoje é usado em muitas ferramentas de monitoramento de sites para auditar o tráfego entre os servidores da web e os dispositivos IoT. O surgimento recente de botnets IoT, como o Mirai, também estimulou o interesse pelo Nmap, principalmente graças à sua capacidade de interrogar dispositivos conectados por meio do protocolo UPnP e de destacar qualquer dispositivo que possa ser malicioso.
+                        </h1>
     
     
                     </div>
     
     
                     <div class="titulokali">
-                        <h1>A</h1>
+                        <h1>O QUE ELE FAZ?</h1>
         
         
                     </div>
@@ -72,46 +79,101 @@
     
     
     
-                        <h1>A</h1>
+                        <h1>Em um nível prático, o Nmap é usado para fornecer informações detalhadas em tempo real sobre suas redes e sobre os dispositivos conectados a elas.
+
+                            Os principais usos do Nmap podem ser divididos em três processos principais. Primeiro, o programa fornece informações detalhadas sobre todos os IPs ativos nas suas redes, e então cada IP pode ser verificado. Isso permite que os administradores verifiquem se um IP está sendo usado por um serviço legítimo ou por um invasor externo.
+                            
+                            Depois, o Nmap fornece informações sobre a sua rede como um todo. Ele pode ser usado para fornecer uma lista de live hosts e portas abertas, bem como para identificar o sistema operacional de cada dispositivo conectado. Isso o torna uma ferramenta valiosa no monitoramento contínuo do sistema, bem como uma parte crítica do teste de intrusão (pentesting). O Nmap pode ser usado em conjunto com a estrutura Metasploit, por exemplo, para investigar e reparar as vulnerabilidades da rede.
+                            
+                            Em terceiro lugar, o Nmap também se tornou uma ferramenta valiosa para os usuários que buscam proteger sites pessoais e comerciais. Usar o Nmap para varrer o servidor do seu próprio site, especialmente se você estiver hospedando seu site de casa, é basicamente simular o processo que um hacker usaria para atacar o seu site. "Atacar" o seu próprio site dessa forma é uma maneira poderosa de identificar vulnerabilidades de segurança.</h1>
     
+        
     
-                        <code class="code">A</code>
-                        
-    
-    
+                    </div>
+                    <div class="titulokali">
+                        <h1>Como executar uma varredura de ping</h1>
+
+
                     </div>
     
                     <div class="tor6">
     
     
     
-                        <h1>A</h1>
+                        <h1>Uma das funções mais básicas do Nmap é identificar hosts ativos na sua rede. O Nmap faz isso usando uma varredura de ping. Assim, ele identifica todos os endereços de IP que estão online atualmente sem enviar nenhum packer para esses hosts.
+
+                            Para executar uma varredura de ping, execute o comando a seguir:</h1>
     
     
                     </div>
+    
+                    <code class="code"># nmap -sp 192.100.1.1/24</code>
+    
+                    <div class="tor6">
+    
+    
+    
+                        <h1>Esse comando retorna uma lista de hosts da sua rede e o número total de endereços IP atribuídos. Se você detectar hosts ou endereços IP nessa lista que não possa explicar, poderá executar outros comandos (veja abaixo) para investigá-los mais a fundo.</h1>
+    
+    
+                    </div>
+
+
+
+                    <div class="titulokali">
+                        <h1>Como executar uma varredura de host</h1>
+
+
+                    </div>
+
+                    <div class="tor6">
+    
+    
+    
+                        <h1>Uma forma mais poderosa de varrer suas redes é usar o Nmap para realizar uma varredura de hosts. Diferente da varredura de ping, uma varredura de host envia ativamente pacotes de solicitação ARP para todos os hosts conectados à sua rede. Então, cada host responde ao pacote com outro pacote ARP contendo seu status e endereço MAC.
+
+                            Para executar uma varredura de hosts, use o comando a seguir:</h1>
+    
+    
+                    </div>
+    
+                    <code class="code"># nmap -sp <target IP range></code>
+
+
+    
+    
+                    <div class="tor6">
+    
+    
+    
+                        <h1>São retornadas informações sobre cada host, sua latência, endereço MAC e qualquer descrição associadas a esse endereço. Essa pode ser uma forma poderosa de detectar hosts suspeitos conectados à sua rede.
+
+                            Se você encontrar algo incomum nessa lista, pode executar uma consulta DNS sobre um host específico, usando:</h1>
+    
+    
+                    </div>
+
+                    <code class="code"># namp -sL <IP address></code>
+    
+                    <div class="titulokali">
+                        <h1>Como usar o Nmap no Kali Linux</h1>
+        
+        
+                    </div>
+    
+                    <div class="tor6">
+    
+    
+    
+                        <h1>Usar o Nmap no Kali Linux pode ser feito de modo idêntico à execução do programa em qualquer outra versão do Linux.
+
+                            Dito isso, há vantagens em usar o Kali ao executar varreduras no Nmap. A maioria das distros modernas do Kali agora vem com um pacote Nmap completo, que inclui uma GUI avançada e um visualizador de resultados (Zenmap), uma ferramenta flexível de transferência, redirecionamento e depuração de dados (Ncat), um utilitário para comparar resultados de varredura (Ndiff) e uma ferramenta de geração e análise de resposta de pacotes (Nping).</h1>
+    
+    
+                    </div>
+    
     
                     <code class="code">A</code>
-    
-                    <div class="tor6">
-    
-    
-    
-                        <h1>A</h1>
-    
-    
-                    </div>
-    
-                    <code class="code">A</code>
-    
-    
-                    <div class="tor6">
-    
-    
-    
-                        <h1>A</h1>
-    
-    
-                    </div>
     
                     <div class="titulokali">
                         <h1>A</h1>
@@ -128,24 +190,6 @@
     
                     </div>
     
-    
-                    <code class="code">A</code>
-    
-                    <div class="titulokali">
-                        <h1>A</h1>
-        
-        
-                    </div>
-    
-                    <div class="tor6">
-    
-    
-    
-                        <h1>A</h1>
-    
-    
-                    </div>
-    
                     <code class="code">A</code>
     
                     <div class="tor6">
@@ -154,66 +198,6 @@
     
                         <h1>A</h1>
     
-    
-                    </div>
-    
-                    <code class="code">A</code>
-    
-                    <div class="titulokali">
-                        <h1>A</h1>
-    
-    
-                    </div>
-        
-    
-    
-                    <div class="tor6">
-    
-    
-    
-                        <h1>A</h1>
-    
-    
-                    </div>
-    
-                    <code class="code">A</code>
-    
-    
-    
-                    <div class="tor6">
-    
-    
-    
-                        <h1>A</h1>
-    
-                    </div>
-    
-                    <div class="titulokali">
-                        <h1>A</h1>
-    
-                    </div>
-    
-                    <div class="tor6">
-    
-                        <h1>A</h1>
-    
-                    </div>
-    
-    
-                    <code class="code">A</code>
-    
-    
-    
-                    <div class="titulokali">
-                        <h1>A</h1>
-    
-    
-                    </div>
-    
-    
-                    <div class="tor6">
-    
-                        <h1>A</h1>
     
                     </div>
     
@@ -222,6 +206,35 @@
                     <div class="titulokali">
                         <h1>A</h1>
     
+    
+                    </div>
+        
+    
+    
+                    <div class="tor6">
+    
+    
+    
+                        <h1>A</h1>
+    
+    
+                    </div>
+    
+                    <code class="code">A</code>
+    
+    
+    
+                    <div class="tor6">
+    
+    
+    
+                        <h1>A</h1>
+    
+                    </div>
+    
+                    <div class="titulokali">
+                        <h1>A</h1>
+    
                     </div>
     
                     <div class="tor6">
@@ -229,6 +242,38 @@
                         <h1>A</h1>
     
                     </div>
+    
+    
+                    <code class="code">A</code>
+    
+    
+    
+                    <div class="titulokali">
+                        <h1>A</h1>
+    
+    
+                    </div>
+    
+    
+                    <div class="tor6">
+    
+                        <h1>A</h1>
+    
+                    </div>
+    
+                    <code class="code">A</code>
+    
+                    <div class="titulokali">
+                        <h1>A</h1>
+    
+                    </div>
+    
+                    <div class="tor6">
+    
+                        <h1>A</h1>
+    
+                    </div>
+                </section>
                     
 
 
