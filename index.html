@@ -16,7 +16,7 @@
  <body>
         
 
-        <header>  
+        <header class="cabecalho">  
 
             <div class = "logo" >
                 <img src="img/kkll.png" alt="imagem do sistema operacional kali Linux" width="150" height="150">
@@ -28,24 +28,26 @@
                 <p>O MELHOR DO MERCADO</p>           
             </div>
            
-            <nav>
+            <nav id="menu">
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="menu-icon">&#9776;</label>
                 <ul>
                   <div class="links1">
 
                     <div class="link1">
-                       <li><a href="./metasploit.html">METASPLOIT</a></li>
+                       <li><a href="./metasploit.html"onclick="document.getElementById('menu-toggle').click()">METASPLOIT</a></li>
                     </div>
 
                     <div class="link1">
-                       <li><a href="./nmap.html">N-MAP</a></li>
+                       <li><a href="./nmap.html"onclick="document.getElementById('menu-toggle').click()">N-MAP</a></li>
                     </div>
 
                     <div class="link1">
-                       <li><a href="./wireshark.html">WIRESHARK</a></li>
+                       <li><a href="./wireshark.html"onclick="document.getElementById('menu-toggle').click()">WIRESHARK</a></li>
                     </div>
 
                     <div class="link1">
-                       <li><a href="./aircrack.html">AIRCRACK</a></li>
+                       <li><a href="./aircrack.html"onclick="document.getElementById('menu-toggle').click()">AIRCRACK</a></li>
                     </div>
                     
                   </div>
@@ -65,28 +67,28 @@
                     <div>
                         <img class="abcde" src="img/favicon.png" alt="simbolo do programa metasploit">
                     </div>
-                    <p></p>
+                    <p>METASPLOIT</p>
                 </div>
 
                 <div class="img1">
                     <div>
                         <img class="abcde" src="img/nmap.webp" alt="simbolo do programa N-MAP">
                     </div>
-                    <p></p>
+                    <p>N-MAP</p>
                 </div>
 
                 <div class="img1">
                     <div>
                         <img class="abcde" src="img/wireshark.jpg" alt="simboo do programa Wireshark">
                     </div>
-                    <p></p>
+                    <p>WIRESHARK</p>
                 </div>
 
                 <div class="img1">
                     <div>
-                        <img class="abcde" src="img/wifi_.webp" alt="simbolo do prrograma Aircrack-ng">
+                        <img class="abcde" src="img/wifi_.webp" alt="simbolo do programa Aircrack-ng">
                     </div>
-                    <p></p>
+                    <p>AIR-CRACK</p>
                 </div>
 
             </div>
@@ -107,7 +109,8 @@
             </div>
 
             <div class = "tor">
-                <section>O kali linux é um sistema operacional ; feito para o hacking ; invasão de sistemas ;
+                <section>
+                    O kali linux é um sistema operacional ; feito para o hacking ; invasão de sistemas ;
                     ele foi feito para facilitar o trabalho de profissionais na área ; e até hoje é o mais completo
                     sistema operacional hacker já feito.O kali linux proporciona ferramentas , programas de hacking
 
@@ -115,6 +118,7 @@
 
 
             </div>
+            
 
             <div class = "tor2">
 
