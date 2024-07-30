@@ -40,31 +40,34 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;}
+
 .AEA{
 
-
-
     text-align: center;
-    font-size: 800%;
+    font-size: 400%;
     color: blue;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
+}
 
 body{
 
  background-color: #75a0f5;
 
-
-
 }
 main{
+
     color: rgb(2, 2, 250);
     background-color: cadetblue;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    padding: 4%;}
+    padding: 4%;
+
+}
+
 nav{
+
     display: flex;
     background-color: rgb(255, 94, 94);
     padding: 1%;
@@ -72,8 +75,8 @@ nav{
 
        }
 
-
 .menu-icon {
+
     display: none;
     font-size: 30px;
     color: white;
@@ -81,6 +84,7 @@ nav{
 }
     
 #menu-toggle {
+
     display: none;
 }
 
@@ -97,47 +101,36 @@ nav{
     box-sizing: border-box;
     margin-bottom: 30%;
 
+}
+
+html{
+
+    scroll-behavior: smooth;
+    scroll-padding-top: 40%;
 
 }
 
-
-
-
-
-
-
 .cabecalho{
 
-
     margin-bottom: 50%;
-
-    
-
-    
-    
-    
-    
-    
-
-
 
 }
     
 .footer{
 
-
     padding: 5%;
     margin: auto;
     margin-left: auto;
     margin-right: auto;}
-.tor{
 
-   
+.tor{
+  
     padding: 5%;
     margin: auto;
     font-size: 140%;
     text-align: left;
     font-size: 150%;}
+
 .tor2{
 
     padding: 5%;
@@ -145,14 +138,15 @@ nav{
     font-size: 140%;
     text-align: left;
     font-size: 150%;}
-.tor3{
 
+.tor3{
   
     padding: 5%;
     margin: auto;
     font-size: 140%;
     text-align: left;
     font-size: 150%;}
+
 .tor4{
 
     padding: 5%;
@@ -160,16 +154,16 @@ nav{
     font-size: 140%;
     text-align: left;
     font-size: 150%;}
-.tor5{
 
-   
+.tor5{
+  
     padding: 5%;
     margin: auto;
     font-size: 140%;
     text-align: left;
     font-size: 150%;}
-.tor6{
 
+.tor6{
 
     padding: 1%;
     margin: auto;
@@ -183,6 +177,7 @@ text-align: center;
 padding-top: 4%;
 padding-bottom: 10%;
 margin: 3%;}
+
 .titulokali2{
 
     font-size: 400%;
@@ -191,7 +186,11 @@ margin: 3%;}
     padding-top: 5%;
 }
 .logo{
- width: 10%; }
+ width: 10%;
+ align-items: center;
+
+
+}
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
@@ -234,24 +233,20 @@ a:active {
   color: rgb(255, 255, 2);
   text-decoration: none;
 }
+
 .linha{
 
     display: flex;
     flex-flow: row wrap;
     margin-left: auto;
     margin-right: auto;
-
-  
-
 }
+
 .AEIOU{
-
 text-align: center;
-
-
 }
-.code{
 
+.code{
 display: block;
 overflow-x: auto;
 padding: 4%;
@@ -263,28 +258,27 @@ font-size: large;}
 .links1{
 
   display: flex;
-  
-  
-  
-
-
 }
 .link1{
-
-
-
 
     align-items: center;
 
     margin-left: 30%;
+}
+#SUMARIO{
 
+
+    padding-bottom: 25%;
+    margin: auto;   
+    text-align: left;
+    font-size: 150%;
+    text-align: center;
 
 
 
 
 
 }
-
 
 @media (max-width: 600px) {
     .AEA {color: #75a0f5;}}
