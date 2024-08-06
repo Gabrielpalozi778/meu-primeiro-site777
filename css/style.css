@@ -275,10 +275,49 @@ font-size: large;}
     text-align: center;
 
 
-
-
-
 }
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: 3s;
+    outline: none;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: rgb(252, 0, 0);
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .form{
+    border-radius: 5px;
+    background-color: #0066ff;
+    padding: 20px;
+  }
+  .name{
+
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #45a049;
+    
+  }
+
+  
 
 @media (max-width: 600px) {
     .AEA {color: #75a0f5;}}
